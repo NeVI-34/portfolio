@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Nevin Reji, a 2nd-year B.Tech CS student at TocH Institute of Science and Technology. Aspiring Software Developer and Cybersecurity Enthusiast.">
+    <title>Nevin Reji | Aspiring Software Developer & Cybersecurity Enthusiast</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Local CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dynamic Glowing Aura Mesh Canvas -->
+    <canvas id="cyber-bg"></canvas>
+
+    <!-- Header Navigation -->
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">N</span>evin<span class="logo-dot">.</span>Reji
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" aria-label="Open mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- 1. Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-text-center">
+                    <div class="hero-badge reveal">
+                        <span class="badge-dot"></span>
+                        <span class="badge-label font-mono">PORTFOLIO.SECURE_TUNNEL_ESTABLISHED</span>
+                    </div>
+                    
+                    <h1 class="hero-title reveal">
+                        Nevin Reji
+                    </h1>
+                    
+                    <p class="hero-subheadline reveal">
+                        Currently pursuing B.Tech at TocH Institute of Science and Technology | Aspiring Software Developer & Cybersecurity Enthusiast
+                    </p>
+                    
+                    <p class="hero-tagline reveal">
+                        "2nd-year CS student building secure digital experiences. Passionate about developing robust applications and exploring cybersecurity to protect systems from evolving threats."
+                    </p>
+                    
+                    <div class="hero-ctas reveal">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                
+                <!-- Center Hero Diagnostic Visual Panel -->
+                <div class="hero-visual-card reveal">
+                    <div class="panel-header">
+                        <div class="panel-dots">
+                            <span class="p-dot"></span>
+                            <span class="p-dot"></span>
+                            <span class="p-dot"></span>
+                        </div>
+                        <div class="panel-title font-mono">SYSTEM_DIAGNOSTIC.SYS</div>
+                        <div class="panel-status font-mono">ONLINE</div>
+                    </div>
+                    <div class="panel-body">
+                        <!-- Custom SVG Lock Emblem -->
+                        <div class="panel-graphic">
+                            <svg viewBox="0 0 100 100" class="cyber-svg-emblem" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg-orbit" d="M50 8 A42 42 0 1 1 49.9 8" stroke="var(--color-accent-dim)" stroke-width="1.5" stroke-dasharray="8 6" />
+                                <path class="svg-orbit-reverse" d="M50 16 A34 34 0 1 1 49.9 16" stroke="var(--color-accent-2-dim)" stroke-width="1" stroke-dasharray="4 4" />
+                                <path class="svg-shield" d="M50 26 C57 26 67 22 67 22 C67 22 70 42 67 60 C63 76 50 81 50 81 C50 81 37 76 33 60 C30 42 33 22 33 22 C33 22 43 26 50 26 Z" fill="url(#shield-grad)" stroke="var(--color-accent)" stroke-width="2" />
+                                <circle cx="50" cy="50" r="8" stroke="var(--color-accent-2)" stroke-width="2" />
+                                <path d="M50 36 V42" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" />
+                                <path d="M50 58 V66" stroke="var(--color-accent-2)" stroke-width="2" stroke-linecap="round" />
+                                
+                                <defs>
+                                    <linearGradient id="shield-grad" x1="50" y1="26" x2="50" y2="81" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="var(--color-accent-dim)" stop-opacity="0.2" />
+                                        <stop offset="100%" stop-color="var(--color-accent-2-dim)" stop-opacity="0.05" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="panel-readings font-mono">
+                            <div class="reading-row">
+                                <span class="r-label">CORE_INTEGRITY:</span>
+                                <span class="r-val secure">100% SECURE</span>
+                            </div>
+                            <div class="reading-row">
+                                <span class="r-label">ACTIVE_PROTOCOLS:</span>
+                                <span class="r-val">AES_256 // TLS_1.3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="about-section section-padding section-border">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag font-mono">// 01 / PROFILE</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info-block reveal">
+                        <p class="about-p highlight-p">
+                            Hi, I'm Nevin Reji, a second-year Computer Science student deeply passionate about both software development and cybersecurity. I enjoy turning ideas into secure, functional applications while constantly learning how to defend digital systems against vulnerabilities.
+                        </p>
+                        <p class="about-p">
+                            With hands-on experience in Python, web technologies (HTML, CSS), and C++, I focus on writing clean, efficient code. My growing interest in cybersecurity drives me to explore secure coding practices, ethical hacking concepts, and system protection — aiming to build solutions that are not only powerful but also resilient.
+                        </p>
+                        
+                        <div class="about-actions">
+                            <a href="placeholder_resume.pdf" class="btn btn-outline" download="Nevin_Reji_Resume.pdf">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                <span>Download Resume</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card-block reveal reveal-delay-2">
+                        <div class="secure-vault-card">
+                            <div class="vault-header">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="vault-lock-icon">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                                <span class="vault-title font-mono">CREDENTIAL_FILE.DAT</span>
+                            </div>
+                            <div class="vault-body font-mono">
+                                <div class="vault-line"><span class="v-key">owner</span>: <span class="v-val">"Nevin Reji"</span></div>
+                                <div class="vault-line"><span class="v-key">academic_year</span>: <span class="v-val">"2nd Year B.Tech"</span></div>
+                                <div class="vault-line"><span class="v-key">institution</span>: <span class="v-val">"TocH Institute, Ernakulam"</span></div>
+                                <div class="vault-line"><span class="v-key">focus</span>: <span class="v-val">["Development", "Security"]</span></div>
+                                <div class="vault-line"><span class="v-key">sys_status</span>: <span class="v-val active-status">"ACTIVE_LEARNING"</span></div>
+                                
+                                <div class="vault-progress-box">
+                                    <div class="progress-info">
+                                        <span>DECRYPTION_RATIO</span>
+                                        <span>100%</span>
+                                    </div>
+                                    <div class="progress-track">
+                                        <div class="progress-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section -->
+        <section id="skills" class="skills-section section-padding section-border">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag font-mono">// 02 / CAPABILITIES</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+                
+                <div class="skills-layout">
+                    <div class="skills-grid">
+                        <!-- Skill 1: Python -->
+                        <div class="skill-card reveal reveal-delay-1">
+                            <div class="sc-header">
+                                <span class="sc-idx font-mono">01/</span>
+                                <h3 class="sc-title">Python</h3>
+                            </div>
+                            <p class="sc-desc">Main scripting language. Used for automation, security testing scripts, data structures, and scanner development.</p>
+                            <span class="sc-badge font-mono">CORE_STACK</span>
+                        </div>
+                        
+                        <!-- Skill 2: HTML & CSS -->
+                        <div class="skill-card reveal reveal-delay-2">
+                            <div class="sc-header">
+                                <span class="sc-idx font-mono">02/</span>
+                                <h3 class="sc-title">HTML &amp; CSS</h3>
+                            </div>
+                            <p class="sc-desc">Structure and modern responsive styling. Experienced in writing semantic code, flexbox/grid layout, and interactive UIs.</p>
+                            <span class="sc-badge font-mono">FRONTEND</span>
+                        </div>
+
+                        <!-- Skill 3: C++ -->
+                        <div class="skill-card reveal reveal-delay-3">
+                            <div class="sc-header">
+                                <span class="sc-idx font-mono">03/</span>
+                                <h3 class="sc-title">C++</h3>
+                            </div>
+                            <p class="sc-desc">Low-level concepts, system operations, and performance-oriented programming. Solid foundations in OOP.</p>
+                            <span class="sc-badge font-mono">SYSTEMS</span>
+                        </div>
+
+                        <!-- Skill 4: Web Development -->
+                        <div class="skill-card reveal reveal-delay-4">
+                            <div class="sc-header">
+                                <span class="sc-idx font-mono">04/</span>
+                                <h3 class="sc-title">Web Development</h3>
+                            </div>
+                            <p class="sc-desc">Building secure frontend web clients and mock backend applications using modular, clean code principles.</p>
+                            <span class="sc-badge font-mono">BUILDING</span>
+                        </div>
+
+                        <!-- Skill 5: Problem Solving -->
+                        <div class="skill-card reveal reveal-delay-5">
+                            <div class="sc-header">
+                                <span class="sc-idx font-mono">05/</span>
+                                <h3 class="sc-title">Problem Solving</h3>
+                            </div>
+                            <p class="sc-desc">Algorithmic thinking. Applying data structures to resolve execution bottlenecks and simplify code logic.</p>
+                            <span class="sc-badge font-mono">LOGIC</span>
+                        </div>
+
+                        <!-- Skill 6: Cybersecurity Fundamentals -->
+                        <div class="skill-card reveal reveal-delay-6">
+                            <div class="sc-header">
+                                <span class="sc-idx font-mono">06/</span>
+                                <h3 class="sc-title">Cybersecurity</h3>
+                            </div>
+                            <p class="sc-desc">Understanding network architectures, threat modeling, common vulnerability vectors (OWASP Top 10), and defense mechanisms.</p>
+                            <span class="sc-badge font-mono font-accent-2">DEFENSE_CORE</span>
+                        </div>
+
+                        <!-- Skill 7: Secure Coding -->
+                        <div class="skill-card reveal">
+                            <div class="sc-header">
+                                <span class="sc-idx font-mono">07/</span>
+                                <h3 class="sc-title">Secure Coding</h3>
+                            </div>
+                            <p class="sc-desc">Practicing input validation, secure session management, credential hashing, and avoiding buffer overflows or injection flaws.</p>
+                            <span class="sc-badge font-mono font-accent-2">DEFENSE_CORE</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-tags-box reveal">
+                        <span class="qt-header font-mono">&gt;_ TAGS:</span>
+                        <div class="tags-row">
+                            <span class="tag-label">Python</span>
+                            <span class="tag-label">HTML</span>
+                            <span class="tag-label">CSS</span>
+                            <span class="tag-label">C++</span>
+                            <span class="tag-label">Web Development</span>
+                            <span class="tag-label">Problem Solving</span>
+                            <span class="tag-label">Cybersecurity Fundamentals</span>
+                            <span class="tag-label">Secure Coding</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Projects Section -->
+        <section id="projects" class="projects-section section-padding section-border">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag font-mono">// 03 / PORTFOLIO</span>
+                    <h2 class="section-title">Projects</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: VulnScan -->
+                    <div class="project-card reveal">
+                        <div class="project-card-header">
+                            <div class="pc-title-area">
+                                <h3 class="pc-title">VulnScan</h3>
+                                <span class="pc-subtitle">Automated Python Vulnerability Scanner</span>
+                            </div>
+                            <span class="pc-status secure font-mono">SECURE</span>
+                        </div>
+                        <div class="project-card-body">
+                            <!-- Problem -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">PROBLEM</span>
+                                <p class="pc-text">Web applications often go live with basic, critical vulnerabilities due to a lack of easy-to-use, quick scanning mechanisms integrated into a developer's local workflow.</p>
+                            </div>
+                            <!-- Role -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">MY ROLE</span>
+                                <p class="pc-text">Sole Developer. Designed the scanner from scratch, focusing on lightweight patterns, modular checks, and clear diagnostic reports.</p>
+                            </div>
+                            <!-- Solution -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">SOLUTION</span>
+                                <p class="pc-text">Built a multi-threaded Python scanner utilizing standard HTTP request libraries. Implemented pattern-based scans for common flaws such as XSS (Cross-Site Scripting), SQL Injection payloads, and insecure HTTP response headers.</p>
+                            </div>
+                            <!-- Outcome -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">OUTCOME</span>
+                                <p class="pc-text">Created a CLI tool capable of scanning local target servers in seconds, outputting color-coded vulnerability threat levels and recommending specific mitigation actions.</p>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <span class="pc-tech font-mono">Python</span>
+                            <span class="pc-tech font-mono">Network Security</span>
+                            <span class="pc-tech font-mono">CLI</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: PassGuard -->
+                    <div class="project-card reveal reveal-delay-2">
+                        <div class="project-card-header">
+                            <div class="pc-title-area">
+                                <h3 class="pc-title">PassGuard</h3>
+                                <span class="pc-subtitle">Local Encrypted Password Vault</span>
+                            </div>
+                            <span class="pc-status encrypted font-mono">ENCRYPTED</span>
+                        </div>
+                        <div class="project-card-body">
+                            <!-- Problem -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">PROBLEM</span>
+                                <p class="pc-text">Storing passwords in browsers or simple text files exposes user credentials to local data extraction malware and unauthorized local access.</p>
+                            </div>
+                            <!-- Role -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">MY ROLE</span>
+                                <p class="pc-text">Lead Programmer. Researched local database encryption techniques and implemented the cryptography module for password key derivation.</p>
+                            </div>
+                            <!-- Solution -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">SOLUTION</span>
+                                <p class="pc-text">Developed a local desktop application using Python (Tkinter) and the PyCryptodome library. Implemented robust AES-256 (GCM mode) database encryption, relying on a PBKDF2-derived master password key for authentication.</p>
+                            </div>
+                            <!-- Outcome -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">OUTCOME</span>
+                                <p class="pc-text">Achieved zero-knowledge local storage with secure memory-handling logic, making credentials completely inaccessible to offline inspection without the correct master key.</p>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <span class="pc-tech font-mono">Python</span>
+                            <span class="pc-tech font-mono">AES-256</span>
+                            <span class="pc-tech font-mono">Tkinter</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: AuthShield -->
+                    <div class="project-card reveal">
+                        <div class="project-card-header">
+                            <div class="pc-title-area">
+                                <h3 class="pc-title">AuthShield</h3>
+                                <span class="pc-subtitle">MFA-Enabled Mock Web Portal</span>
+                            </div>
+                            <span class="pc-status auth font-mono">MFA_GATE</span>
+                        </div>
+                        <div class="project-card-body">
+                            <!-- Problem -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">PROBLEM</span>
+                                <p class="pc-text">Basic web portals are vulnerable to automated brute-force attacks, dictionary attacks, and credential stuffing when they lack session validation and MFA guards.</p>
+                            </div>
+                            <!-- Role -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">MY ROLE</span>
+                                <p class="pc-text">Fullstack Developer. Implemented backend rate-limiting, secure cookies, bcrypt password hashing, and simulated MFA tokens.</p>
+                            </div>
+                            <!-- Solution -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">SOLUTION</span>
+                                <p class="pc-text">Built using HTML5, CSS3, JavaScript, and Node.js. Used secure security headers, encrypted session cookies, and simulated two-factor TOTP generation algorithms.</p>
+                            </div>
+                            <!-- Outcome -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">OUTCOME</span>
+                                <p class="pc-text">Demonstrated a highly secure defense-in-depth web app that effectively flags multiple incorrect login attempts and block brute-force scanners.</p>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <span class="pc-tech font-mono">HTML/CSS</span>
+                            <span class="pc-tech font-mono">JavaScript</span>
+                            <span class="pc-tech font-mono">NodeJS</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: NetSniff -->
+                    <div class="project-card reveal reveal-delay-2">
+                        <div class="project-card-header">
+                            <div class="pc-title-area">
+                                <h3 class="pc-title">NetSniff</h3>
+                                <span class="pc-subtitle">Lightweight Network Packet Analyzer</span>
+                            </div>
+                            <span class="pc-status monitoring font-mono">SNIFFING</span>
+                        </div>
+                        <div class="project-card-body">
+                            <!-- Problem -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">PROBLEM</span>
+                                <p class="pc-text">Unsecured legacy protocols (like HTTP, FTP, and Telnet) transmit credentials in clear text, exposing local network users to snooping and packet intercept attacks.</p>
+                            </div>
+                            <!-- Role -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">MY ROLE</span>
+                                <p class="pc-text">Systems Developer. Set up packet capture loop interfaces and structured the hex-decoding frame parser in C++.</p>
+                            </div>
+                            <!-- Solution -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">SOLUTION</span>
+                                <p class="pc-text">Created a lightweight C++ console application utilizing Npcap/WinPcap libraries. Configured raw sockets to extract TCP/IP headers, decoding ethernet frames to isolate plain-text parameters.</p>
+                            </div>
+                            <!-- Outcome -->
+                            <div class="pc-item">
+                                <span class="pc-label font-mono">OUTCOME</span>
+                                <p class="pc-text">Successfully flagged unencrypted traffic and extracted dummy authentication details on mock local systems, proving visually why modern secure transport protocols are mandatory.</p>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <span class="pc-tech font-mono">C++</span>
+                            <span class="pc-tech font-mono">Npcap</span>
+                            <span class="pc-tech font-mono">Socket Programming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Education Section -->
+        <section id="education" class="education-section section-padding section-border">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag font-mono">// 04 / ACADEMICS</span>
+                    <h2 class="section-title">Education</h2>
+                </div>
+
+                <div class="edu-card reveal">
+                    <div class="edu-card-glow"></div>
+                    <div class="edu-card-content">
+                        <div class="edu-card-main">
+                            <h3 class="edu-degree">B.Tech in Computer Science &amp; Engineering</h3>
+                            <span class="edu-years font-mono">2024 – Present (2nd Year)</span>
+                        </div>
+                        <h4 class="edu-college">TocH Institute of Science and Technology</h4>
+                        <p class="edu-loc">Arakkunnam, Ernakulam, Kerala</p>
+                        
+                        <div class="edu-focus-area">
+                            <span class="focus-lbl font-mono">RELEVANT_STUDY</span>
+                            <ul class="focus-list">
+                                <li>Data Structures and Algorithms</li>
+                                <li>Object Oriented Programming with C++</li>
+                                <li>Active participation in coding challenges and technical labs</li>
+                                <li>Self-driven study in Cybersecurity Foundations, Cryptography, and Secure Programming</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="contact-box reveal">
+                    <div class="contact-box-header">
+                        <span class="section-tag font-mono">// 05 / SECURE_CONNECT</span>
+                        <h2 class="section-title">Get In Touch</h2>
+                    </div>
+                    <p class="contact-text">
+                        "Let's connect — open to cybersecurity and development opportunities."
+                    </p>
+                    
+                    <div class="contact-layout-grid">
+                        <div class="contact-links">
+                            <!-- Email -->
+                            <a href="mailto:nevinreji7@gmail.com" class="c-link-card">
+                                <div class="c-icon-box">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="c-details">
+                                    <span class="c-label font-mono">EMAIL</span>
+                                    <span class="c-val">nevinreji7@gmail.com</span>
+                                </div>
+                            </a>
+                            
+                            <!-- Phone -->
+                            <a href="tel:+917907685078" class="c-link-card">
+                                <div class="c-icon-box">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div class="c-details">
+                                    <span class="c-label font-mono">PHONE</span>
+                                    <span class="c-val">+91 79076 85078</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="contact-socials">
+                            <!-- GitHub Button -->
+                            <a href="https://github.com/NeVI-34" target="_blank" rel="noopener noreferrer" class="soc-btn github-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="soc-icon">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                <span class="soc-text">GitHub</span>
+                            </a>
+                            
+                            <!-- LinkedIn Button -->
+                            <a href="https://www.linkedin.com/in/nevin-reji-placeholder/" target="_blank" rel="noopener noreferrer" class="soc-btn linkedin-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="soc-icon">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                                <span class="soc-text">LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Nevin Reji. All rights secured.</p>
+            <p class="footer-meta font-mono">VER_2.0.0 // SHA_256_APPROVED</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
